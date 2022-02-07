@@ -9,6 +9,8 @@ struct X {
 
 int main (void)
 {
+     int i = 0;
+   for(i=0;i<100;i++){
   struct X x;
   uint64_t bad_bits;
 
@@ -18,5 +20,6 @@ int main (void)
 
   bad_bits = ((uint64_t)-1ULL) ^ *(1+(uint64_t *) &x);
   printf("bad bits: %llx\n", bad_bits);
+   }
   return bad_bits != 0;
 }

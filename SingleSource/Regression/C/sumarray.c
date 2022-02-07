@@ -12,6 +12,8 @@ int SumArray(int Array[], int Num) {
 }
 
 int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
   int *Array = (int*)malloc(sizeof(int)*100);
   int i;
 
@@ -21,5 +23,6 @@ int main() {
   	Array[i] = i*2;
 
   printf("Produced: %d\n", SumArray(Array, 100));
+   }
   return 0;
 }

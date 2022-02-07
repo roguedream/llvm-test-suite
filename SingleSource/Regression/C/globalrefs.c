@@ -36,6 +36,8 @@ printdiff(void* p1, void* p2)
 int
 main(int argc, char** argv)
 {
+  int i = 0;
+  for(i=0;i<100;i++){
   unsigned long diff1, diff2, diff3, diff4; 
 
   printdiff(&Test1.S.Y, &Test1.A);
@@ -61,6 +63,6 @@ main(int argc, char** argv)
   printf("&TestArray[3] - TestArray = 0x%lx\n", diff1 / sizeof(*TestArray));
   printf("Xptr - Aptr          = 0x%lx\n", diff3);
   printf("NextPtr - Xptr       = 0x%lx\n\n", diff4);
-
+  }
   return 0;
 }

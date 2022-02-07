@@ -6,6 +6,9 @@ int __signbit (double __x) {
 }
 
 int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
   printf("%d %d\n", __signbit(-1), __signbit(2.0));
+   }
   return 0;
 }

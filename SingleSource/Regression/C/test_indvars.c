@@ -18,6 +18,8 @@ static void test_indvars(int *Array1, int Array2[100][200]) {
 
 
 int main() {
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   int Array[100][200], i, j;
   double sum = 0.0;
   
@@ -31,6 +33,6 @@ int main() {
       sum += Array[i][j];
   
   printf("Checksum = %.0lf\n", sum);
-  
+   }
   return 0;
 }

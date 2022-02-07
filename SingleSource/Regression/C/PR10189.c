@@ -76,6 +76,9 @@ func_21 (unsigned char p_, unsigned p_2, int *p_24)
 
 int main (void)
 {
+     int i = 0;
+   for(i=0;i<100;i++){
   func_1 ();
+   }
   return 0;
 }

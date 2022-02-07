@@ -63,17 +63,19 @@ InitializeMixed(Mixed_t* M, int base)
 int
 main(int argc, char** argv)
 {
-  Mixed_t M;
-  Mixed_t MA[4];
-  int i;
-  
-  InitializeMixed(&M, 100);
-  printf("Sum(M)  = %.2f\n", AddMixed(&M));
-  
-  for (i=0; i < 4; i++) {
-    InitializeMixed(&MA[i], 100 * (i+2));
-    printf("Sum(MA[%d]) = %.2f\n", i, AddMixed(&MA[i]));
+  int i = 0;
+  for(i=0;i<100;i++){
+    Mixed_t M;
+    Mixed_t MA[4];
+    int i;
+    
+    InitializeMixed(&M, 100);
+    printf("Sum(M)  = %.2f\n", AddMixed(&M));
+    
+    for (i=0; i < 4; i++) {
+      InitializeMixed(&MA[i], 100 * (i+2));
+      printf("Sum(MA[%d]) = %.2f\n", i, AddMixed(&MA[i]));
+    }
   }
-
   return 0;
 }

@@ -86,6 +86,8 @@ void test(uint64_t x) {
 }
 
 int main(int argc, char *argv[]) {
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   int i, j, k, l, m;
 	const uint64_t one = 1;
 	const uint64_t mone = -1;
@@ -141,6 +143,7 @@ int main(int argc, char *argv[]) {
 	}
     }
 	printf("Finished Testing.\n");
+   }
   return 0;
 }
 

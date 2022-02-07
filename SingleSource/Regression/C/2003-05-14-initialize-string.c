@@ -1,7 +1,10 @@
 extern int printf(const char *str, ...);
 
 int main() {
-  char title[] = "foo and stuff\n";
-  printf("%s", title);
+  int i = 0;
+  for(i=0;i<100;i++){
+    char title[] = "foo and stuff\n";
+    printf("%s", title);
+  }
   return 0;
 }

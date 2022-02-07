@@ -105,52 +105,54 @@ printArgsNoRet(int a1,  float a2,  char a3,  double a4,  char* a5,
 int
 main(int argc, char** argv)
 {
-#ifdef LLVM_CAN_PASS_STRUCTS_BY_VALUE
-  SmallStruct s1, s3, result;
-  BigStruct   s2;
-#endif /* LLVM_CAN_PASS_STRUCTS_BY_VALUE */
-  
-  printArgsNoRet(1,  2.1,  'c', 4.1,  "e",
-                 6,  7.1,  'h', 9.1,  "j",
-                 11, 12.1, 'm', 14.1, "o");
-  
-#ifdef LLC_SUPPORTS_VARARGS_FUNCTIONS
-  printVarArgs(1,  2.2,  'c', 4.2,  "e",
-               6,  7.2,  'h', 9.2,  "j",
-               11, 12.2, 'm', 14.2, "o");
-#endif /* LLC_SUPPORTS_VARARGS_FUNCTIONS */
-  
-#ifdef LLVM_CAN_PASS_STRUCTS_BY_VALUE
-  s1.c1 = 'a'; 
-  s1.c2 = 'b'; 
-  s1.c3 = 'c'; 
-  s1.c4 = 'd'; 
-  s1.n  = 111;
-  
-  s2.c1 = 'h'; 
-  s2.c2 = 'i'; 
-  s2.c3 = 'j'; 
-  s2.c4 = 'k'; 
-  s2.d1 = 1.1;
-  s2.d2 = 2.2;
-  s2.n  = 222;
-  s2.next = &s2;
-  
-  s3.c1 = 'w'; 
-  s3.c2 = 'x'; 
-  s3.c3 = 'y'; 
-  s3.c4 = 'z'; 
-  s3.n  = 333;
-  
-  result = printStructArgs(s1,
-                           1, 2.0, 'c', 4.0, "e",
-                           s2,
-                           6, 7.0, 'h', 9.0, "j",
-                           s3);
-  
-  printf("\nprintStructArgs returns:\n\t%c %c %c %c %d\n\n",
-         result.c1, result.c2, result.c3, result.c4, result.n);
-#endif /* LLVM_CAN_PASS_STRUCTS_BY_VALUE */
-
+  int i = 0;
+  for(i=0;i<100;i++){
+    #ifdef LLVM_CAN_PASS_STRUCTS_BY_VALUE
+      SmallStruct s1, s3, result;
+      BigStruct   s2;
+    #endif /* LLVM_CAN_PASS_STRUCTS_BY_VALUE */
+      
+      printArgsNoRet(1,  2.1,  'c', 4.1,  "e",
+                    6,  7.1,  'h', 9.1,  "j",
+                    11, 12.1, 'm', 14.1, "o");
+      
+    #ifdef LLC_SUPPORTS_VARARGS_FUNCTIONS
+      printVarArgs(1,  2.2,  'c', 4.2,  "e",
+                  6,  7.2,  'h', 9.2,  "j",
+                  11, 12.2, 'm', 14.2, "o");
+    #endif /* LLC_SUPPORTS_VARARGS_FUNCTIONS */
+      
+    #ifdef LLVM_CAN_PASS_STRUCTS_BY_VALUE
+      s1.c1 = 'a'; 
+      s1.c2 = 'b'; 
+      s1.c3 = 'c'; 
+      s1.c4 = 'd'; 
+      s1.n  = 111;
+      
+      s2.c1 = 'h'; 
+      s2.c2 = 'i'; 
+      s2.c3 = 'j'; 
+      s2.c4 = 'k'; 
+      s2.d1 = 1.1;
+      s2.d2 = 2.2;
+      s2.n  = 222;
+      s2.next = &s2;
+      
+      s3.c1 = 'w'; 
+      s3.c2 = 'x'; 
+      s3.c3 = 'y'; 
+      s3.c4 = 'z'; 
+      s3.n  = 333;
+      
+      result = printStructArgs(s1,
+                              1, 2.0, 'c', 4.0, "e",
+                              s2,
+                              6, 7.0, 'h', 9.0, "j",
+                              s3);
+      
+      printf("\nprintStructArgs returns:\n\t%c %c %c %c %d\n\n",
+            result.c1, result.c2, result.c3, result.c4, result.n);
+    #endif /* LLVM_CAN_PASS_STRUCTS_BY_VALUE */
+  }
   return 0;
 }

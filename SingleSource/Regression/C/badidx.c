@@ -16,11 +16,14 @@
 
 int
 main(int argc, char *argv[]) {
+  int i = 0;
+  for(i=0;i<100;i++){
     int i, n = ((argc == 2) ? atoi(argv[1]) : 1);
     int *y = (int *) calloc(n, sizeof(int));
     for (i=0; i < n; i++)
       y[i] = i*i;
     printf("%d\n", y[n-1]);
+  }
     return(0);
 }
 

@@ -30,6 +30,8 @@ static void FillArray(int *Array, unsigned Num) {
 int
 main(int argc, char** argv)
 {
+     int i = 0;
+   for(i=0;i<100;i++){
   int size;
   int *MyArray;
   
@@ -40,5 +42,6 @@ main(int argc, char** argv)
   printf("Sum1 = %d\n", SumArray(MyArray, SIZE));
   printf("Sum2 = %d\n", SumArray2(MyArray, SIZE));
   free(MyArray);
+   }
   return(0);
 }

@@ -36,10 +36,13 @@ testAllocaOrder(int noPrint)
 int
 main(int argc, char** argv)
 {
+     int iii = 0;
+   for(iii=0;iii<100;iii++){
   unsigned int i, noPrint = 1;
   if (argc > 1 && ! strcmp(argv[1], "-d"))
     noPrint = 0;
   for (i=0; i < 10; ++i)
     testAllocaOrder(noPrint);
+   }
   return 0;
 }

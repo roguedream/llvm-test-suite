@@ -25,6 +25,8 @@
 	}
 
 int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
 	short Array[100];
 	short Sum = 0;
 	int i;
@@ -35,5 +37,6 @@ int main() {
 	sum(&Sum, Array, 100);
 
 	printf("Sum is %d\n", Sum);
+   }
         return 0;
 }

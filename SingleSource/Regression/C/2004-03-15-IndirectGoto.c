@@ -1,5 +1,7 @@
 #include <stdio.h>
 int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
   static const void *L[] = {&&L1, &&L2, &&L3, &&L4, 0 };
   unsigned i = 0;
   printf("A\n");
@@ -12,5 +14,6 @@ L3:
   goto *L[i++];
 L4: 
   printf("E\n");
+   }
   return 0;
 }

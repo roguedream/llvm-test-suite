@@ -6,6 +6,8 @@ struct sometimes {
 } Y;
 
 int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
   int X;
   {
     struct sometimes { int X, Y; } S;
@@ -20,5 +22,6 @@ int main() {
   X += Y.offset;
 
   printf("Result is %d\n", X);
+   }
   return X;
 }

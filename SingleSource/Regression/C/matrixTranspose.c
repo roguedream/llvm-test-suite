@@ -26,6 +26,8 @@ extern int printf(const char *str, ...);
 fftw_real A[2048];
 int main(int argc, char **argv)
 {
+  int iii = 0;
+   for(iii=0;iii<100;iii++){
      int i;
 
      fftw_real sum = 0.0;
@@ -43,7 +45,7 @@ int main(int argc, char **argv)
      for (i = 0; i < 2048; ++i)
        sum = sum + A[i];
      printf("Checksum  after = %lf\n", sum);
-
+   }
      return 0;
 }
 

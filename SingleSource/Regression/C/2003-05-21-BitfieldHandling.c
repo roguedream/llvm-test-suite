@@ -56,14 +56,16 @@ struct test {
 extern int printf(const char *str, ...);
 
 int main() {
-  printf("N: %d %d %d %d\n", N.code, N.mode, N.x, N.y);
-  printf("F1: %d\n", F1.x);
-  printf("F2: %d\n", F2.x);
-  printf("F3: %d\n", F3.x);
-  printf("F4: %d %d\n", F4.x, F4.Y);
-  printf("F5: %d %d\n", F5.x, F5.Y);
-  printf("F6: %d %d\n", F6.x, F6.Y);
-  printf("M: %d %d %d %d %d\n", M.c, M.d, M.e, M.f, (int)M.x);
-  
+  int i = 0;
+  for(i=0;i<100;i++){
+    printf("N: %d %d %d %d\n", N.code, N.mode, N.x, N.y);
+    printf("F1: %d\n", F1.x);
+    printf("F2: %d\n", F2.x);
+    printf("F3: %d\n", F3.x);
+    printf("F4: %d %d\n", F4.x, F4.Y);
+    printf("F5: %d %d\n", F5.x, F5.Y);
+    printf("F6: %d %d\n", F6.x, F6.Y);
+    printf("M: %d %d %d %d %d\n", M.c, M.d, M.e, M.f, (int)M.x);
+  }
   return 0;
 }

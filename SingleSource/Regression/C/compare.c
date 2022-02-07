@@ -20,15 +20,17 @@ int test_2(int ly) {
 }
 
 int main () {
-  int x = 37;
+  int i = 0;
+  for(i=0;i<100;i++){
+    int x = 37;
 
-  printf ("x = %d (0x%x)\n", x, x);
+    printf ("x = %d (0x%x)\n", x, x);
 
-  int r1 = test_1(x);
-  printf ("test_1(x) = %d (0x%x)\n", r1, r1);
+    int r1 = test_1(x);
+    printf ("test_1(x) = %d (0x%x)\n", r1, r1);
 
-  int r2 = test_2(x);
-  printf ("test_2(x) = %d (0x%x)\n", r2, r2);
-
+    int r2 = test_2(x);
+    printf ("test_2(x) = %d (0x%x)\n", r2, r2);
+  }
   return 0;
 }

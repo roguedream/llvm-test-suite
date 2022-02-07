@@ -52,11 +52,14 @@ static int test_stdarg(int r)
 
 int main(int argc, char **argv)
 {
+   int i = 0;
+   for(i=0;i<100;i++){    
     if (test_stdarg(1) != 1) {
         printf("ERROR\n");
-        return 1;
+        
     }
     printf("All done.\n");
+   }
     return 0;
 }
 

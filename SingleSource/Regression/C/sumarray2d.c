@@ -13,6 +13,8 @@ int SumArray(int Array[][100], unsigned int NumI, unsigned int NumJ) {
 }
 
 int main() {
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   int Array[100][100];
   unsigned int i, j;
   
@@ -25,6 +27,6 @@ int main() {
         Array[i][j] = i+j;
   
   printf("Sum(Array[%d,%d] = %d\n", 100, 100, SumArray(Array, 100, 100));
-  
+   }
   return 0;
 }

@@ -5,4 +5,10 @@ typedef struct {
 
 void *Ptr = &((auth_config_rec*)0)->x;
 
-int main() { return 0; }
+int main() {
+   int i = 0;
+   for(i=0;i<100;i++){
+       int c = 1; 
+    }
+    return 0; 
+}
