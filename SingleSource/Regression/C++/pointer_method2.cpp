@@ -23,6 +23,8 @@ template <class T> void invoke(C &c, void (T::*fn)()) {
 }
 
 int main() {
+    int iii = 0;
+   for(iii=0;iii<100;iii++){
   C c;
   c.a = 0xff;
   c.b = 0xf0f;
@@ -34,4 +36,5 @@ int main() {
   invoke(c, &B::bar);
   invoke(c, &C::foo);
   invoke(c, &C::bar);
+   }
 }

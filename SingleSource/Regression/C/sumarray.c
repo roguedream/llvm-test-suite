@@ -12,8 +12,8 @@ int SumArray(int Array[], int Num) {
 }
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   int *Array = (int*)malloc(sizeof(int)*100);
   int i;
 

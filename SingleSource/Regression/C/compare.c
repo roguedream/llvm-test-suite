@@ -20,8 +20,8 @@ int test_2(int ly) {
 }
 
 int main () {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     int x = 37;
 
     printf ("x = %d (0x%x)\n", x, x);

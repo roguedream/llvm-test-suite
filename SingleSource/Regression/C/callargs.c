@@ -105,8 +105,8 @@ printArgsNoRet(int a1,  float a2,  char a3,  double a4,  char* a5,
 int
 main(int argc, char** argv)
 {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     #ifdef LLVM_CAN_PASS_STRUCTS_BY_VALUE
       SmallStruct s1, s3, result;
       BigStruct   s2;

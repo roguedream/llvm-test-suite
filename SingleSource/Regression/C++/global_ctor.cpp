@@ -22,6 +22,9 @@ struct bar {
 } Destructor1;     // Global with dtor
 
 int main() {
+    int iii = 0;
+   for(iii=0;iii<100;iii++){
   printf("main\n");
+   }
   return 0;
 }

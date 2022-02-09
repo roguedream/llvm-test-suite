@@ -18,8 +18,8 @@ static int64_t lls[] = {
 int
 main(int argc, char** argv)
 {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     int8_t        C, c1;
     uint8_t       uc1;
 

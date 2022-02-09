@@ -30,8 +30,8 @@ static void FillArray(int *Array, unsigned Num) {
 int
 main(int argc, char** argv)
 {
-     int i = 0;
-   for(i=0;i<100;i++){
+     int iii = 0;
+   for(iii=0;iii<100;iii++){
   int size;
   int *MyArray;
   

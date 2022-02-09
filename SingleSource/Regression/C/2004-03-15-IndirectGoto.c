@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   static const void *L[] = {&&L1, &&L2, &&L3, &&L4, 0 };
   unsigned i = 0;
   printf("A\n");

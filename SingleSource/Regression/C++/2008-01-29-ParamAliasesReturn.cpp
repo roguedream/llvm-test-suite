@@ -30,9 +30,12 @@ foo foo::operator+=(const foo& in) {
 }
 
 int main() {
+    int iii = 0;
+   for(iii=0;iii<100;iii++){
   foo x(1, 2);
   foo y(3, 4);
   x += y;
   printf("%d %d\n", x.a, x.b);
+   }
   return 0;
 }

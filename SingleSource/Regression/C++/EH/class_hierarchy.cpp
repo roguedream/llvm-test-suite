@@ -59,6 +59,8 @@ void func (unsigned n) {
 }
 
 int main() {
+int iii = 0;
+   for(iii=0;iii<100;iii++){
   for (unsigned i=0; i<25; i++) {
     try {
       func(i);
@@ -72,5 +74,6 @@ int main() {
       printf("Caught unknown exception\n");
     }
   }
+   }
   return 0;
 }

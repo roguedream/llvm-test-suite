@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void) {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     long double x = 1.0;
     printf("%Lf %Lf\n", x, x);
   }

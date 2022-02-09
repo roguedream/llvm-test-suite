@@ -18,8 +18,8 @@ static int Callee(int i) {
 }
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   int i, j = 0;
   for (i = 0; i < 10000; ++i)
     j += Callee(i);

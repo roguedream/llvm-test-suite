@@ -56,8 +56,8 @@ struct test {
 extern int printf(const char *str, ...);
 
 int main() {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     printf("N: %d %d %d %d\n", N.code, N.mode, N.x, N.y);
     printf("F1: %d\n", F1.x);
     printf("F2: %d\n", F2.x);

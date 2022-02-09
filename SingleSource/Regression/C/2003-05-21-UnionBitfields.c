@@ -17,8 +17,8 @@ int target_isinf(double x) {
 }
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   printf("%d %d\n", target_isinf(1234.42), target_isinf(1.0/5.0e-324));
    }
   return 0;

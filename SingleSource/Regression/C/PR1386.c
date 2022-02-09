@@ -9,11 +9,12 @@ struct X {
 
 int main (void)
 {
-     int i = 0;
-   for(i=0;i<100;i++){
-  struct X x;
-  uint64_t bad_bits;
+     int iii = 0;
+     uint64_t bad_bits;
 
+   for(iii=0;iii<100;iii++){
+  struct X x;
+  
   x.pad = 255;
   x.a = -1ULL;
   x.b = -1ULL;

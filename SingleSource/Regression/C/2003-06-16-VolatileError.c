@@ -3,5 +3,5 @@ extern int volatile test;
 int volatile test = 0;
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){ int c = 1;}return 0; }
+   int iii = 0;
+   for(iii=0;iii<100;iii++){ int c = 1;}return 0; }

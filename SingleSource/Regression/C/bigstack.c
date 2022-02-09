@@ -63,8 +63,8 @@ InitializeMixed(Mixed_t* M, int base)
 int
 main(int argc, char** argv)
 {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
     Mixed_t M;
     Mixed_t MA[4];
     int i;

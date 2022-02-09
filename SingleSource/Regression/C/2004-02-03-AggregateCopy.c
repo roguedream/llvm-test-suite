@@ -5,8 +5,8 @@ typedef struct {
 } agg;
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   agg A;  A.X = 123;
   agg B, C;
   B = C = A;

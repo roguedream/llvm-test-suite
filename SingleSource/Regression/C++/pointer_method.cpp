@@ -16,8 +16,11 @@ void foo(int V, void (B::*Fn)()) {
 }
 
 int main() {
+    int iii = 0;
+   for(iii=0;iii<100;iii++){
 	foo(4, &B::i);
 	foo(6, &B::j);
 	foo(-1, &B::i);
+   }
 	return 0;
 }

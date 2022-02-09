@@ -13,8 +13,8 @@ void takeS1(S1Ty *V) {}
 void takeVoid(void *P) {}
 
 int main() {
-   int i = 0;
-   for(i=0;i<100;i++){
+   int iii = 0;
+   for(iii=0;iii<100;iii++){
   S2Ty E;
   takeS1(&E.B);
   takeVoid(&E);

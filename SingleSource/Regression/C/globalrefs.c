@@ -36,8 +36,8 @@ printdiff(void* p1, void* p2)
 int
 main(int argc, char** argv)
 {
-  int i = 0;
-  for(i=0;i<100;i++){
+  int iii = 0;
+  for(iii=0;iii<100;iii++){
   unsigned long diff1, diff2, diff3, diff4; 
 
   printdiff(&Test1.S.Y, &Test1.A);

@@ -7,8 +7,9 @@ struct sometimes {
 
 int main() {
    int i = 0;
+   int X;
    for(i=0;i<100;i++){
-  int X;
+  
   {
     struct sometimes { int X, Y; } S;
     S.X = 1;

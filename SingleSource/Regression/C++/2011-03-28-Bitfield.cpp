@@ -19,8 +19,10 @@ init() {
 
 
 int main( int argc, char *argv[] )
-{
+{int iii = 0;
+   for(iii=0;iii<100;iii++){
   init();
+   }
   if( (1 == op.datatype) ||
       (2 == op.datatype) ||
       (3 == op.datatype) )

@@ -16,6 +16,9 @@ int foo( _Unwind_Reason_Code X) {
 }
 
 int main() {
+    int iii = 0;
+   for(iii=0;iii<100;iii++){
   foo(_URC_END_OF_STACK);
+   }
   return 0;
 }

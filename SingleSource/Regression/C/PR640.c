@@ -52,8 +52,8 @@ static int test_stdarg(int r)
 
 int main(int argc, char **argv)
 {
-   int i = 0;
-   for(i=0;i<100;i++){    
+   int iii = 0;
+   for(iii=0;iii<100;iii++){    
     if (test_stdarg(1) != 1) {
         printf("ERROR\n");
         
